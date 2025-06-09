@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#F9B75A">
+
+    <!-- 轮播图 -->
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_margin="20dp"/>
+
+    <!-- 轮播图下方的广告标语 -->
+    <TextView
+        android:id="@+id/adText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="爱心捐赠，让饥饿不再发生"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:textColor="@android:color/black"/>
+
+    <!-- 指示器 -->
+    <LinearLayout
+        android:id="@+id/indicatorLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="10dp"/>
+
+    <!-- 进入 APP 按钮 -->
+    <Button
+        android:id="@+id/btnEnterApp"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="30dp"
+        android:text="进入 APP"
+        android:textSize="20sp"
+        android:textColor="#F9B75A"
+        android:background="@drawable/rounded_button"/>
+
+</LinearLayout>

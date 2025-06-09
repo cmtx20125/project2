@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.myapplication">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <!-- 对于 Android 13 (API 33) 及以上版本 -->
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.ACCESS_MEDIA_LOCATION"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION"/>
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+
+
+    <!-- 这个权限用于进行网络定位-->
+
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:requestLegacyExternalStorage="true"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:usesCleartextTraffic="true"
+        android:icon="@drawable/dog_cat_logo"
+        android:name=".DemoApplication"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/dog_cat_logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyApplication"
+        tools:targetApi="31">
+        <!-- 百度地图 Key -->
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="3t7yeZY8bbnNGBCSAWRxFjgzcUkHoiPN" />
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:exported="true"
+            android:process=":remote">
+        </service>
+
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".UI.LoginActivity"/>
+        <activity android:name=".UI.RegisterActivity"/>
+        <activity android:name=".UI.SmsLoginActivity"/>
+        <activity android:name=".UI.JinActivity"/>
+        <activity android:name=".UI.HomeActivity"/>
+        <activity android:name=".UI.ReportActivity"/>
+        <activity android:name=".UI.ArticleDetailActivity"/>
+        <activity android:name=".UI.ReportDetailTActivity"/>
+        <activity android:name=".UI.ReportDetaiVActivity"/>
+        <activity android:name=".UI.PetActivity"/>
+        <activity android:name=".UI.ProfileActivity"/>
+        <activity android:name=".UI.PetDetaiActivity"/>
+        <activity android:name=".UI.PublishDetailTActivity"/>
+        <activity android:name=".UI.PublishDetailVActivity"/>
+        <activity android:name=".UI.TrendsActivity"/>
+        <activity android:name=".UI.AnimalActivity"/>
+        <activity android:name=".UI.MessagesActivity"/>
+        <activity android:name=".UI.PublishTActivity"/>
+        <activity android:name=".UI.PublishTTActivity"/>
+        <activity android:name=".UI.PhotoShowActivity"/>
+        <activity android:name=".UI.DialogueActivity"/>
+        <activity android:name=".UI.ProfileDetailActivity"/>
+        <activity android:name=".UI.SettingsActivity"/>
+        <activity android:name=".UI.DialogueUserActivity"/>
+        <activity android:name=".UI.ProfileTAActivity"/>
+        <activity android:name=".UI.HospitalActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".UI.EditPetActivity"/>
+        <activity android:name=".UI.EditAnimalActivity"/>
+        <activity android:name=".UI.EditUserActivity"/>
+        <activity android:name=".UI.VideoShowActivity"/>
+        <activity android:name=".UI.AddPetActivity"/>
+        <activity android:name=".UI.ReportTTActivity"/>
+        <activity android:name=".UI.ReportTActivity"/>
+        <activity android:name=".UI.AddAnimalActivity"/>
+        <activity android:name=".UI.PublishVActivity"/>
+        <activity android:name=".UI.ReportVActivity"/>
+        <activity android:name=".UI.PayActivity"/>
+
+    </application>
+
+
+</manifest>

@@ -1,0 +1,33 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/nav_report"
+        android:icon="@drawable/shangbao"
+        android:title="上报"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/nav_adopt"
+        android:icon="@drawable/yiliaozhan"
+        android:title="医疗站"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/zhuye"
+        android:title="首页"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/nav_trends"
+        android:icon="@drawable/dongtai"
+        android:title="动态"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/nav_profile"
+        android:icon="@drawable/wode"
+        android:title="我的"
+        app:showAsAction="ifRoom" />
+</menu>

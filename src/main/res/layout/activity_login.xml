@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#f9b56a"
+    android:padding="20dp">
+
+    <!-- Logo -->
+    <ImageView
+        android:id="@+id/logoImage"
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:scaleType="centerCrop"
+        android:background="@drawable/circle_background"
+        android:src="@drawable/dog_cat_logo"
+        android:layout_marginBottom="40dp"/>
+
+    <!-- 登录按钮 -->
+    <Button
+        android:id="@+id/btnLogin"
+        android:background="@drawable/button_background"
+        style="@style/CustomButton"
+        android:text="登录" />
+
+    <!-- 注册按钮 -->
+    <Button
+        android:id="@+id/btnRegister"
+        android:background="@drawable/button_background"
+        style="@style/CustomButton"
+        android:text="注册" />
+
+</LinearLayout>
